@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="assets/styles/calc.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="calc_container">
+        <form name="calc">
+            <div>
+                <input type="text"id="number" name="num">
+            </div>
+            <div class="btns_container">
+                <input class="btn" type="button" value="1" onclick="calc.num.value +='1'">
+                <input class="btn" type="button" value="2" onclick="calc.num.value +='2'">
+                <input class="btn" type="button" value="3" onclick="calc.num.value +='3'">
+                <input class="btn" type="button" value="+" onclick="calc.num.value +='+'">
+                <input class="btn" type="button" value="4" onclick="calc.num.value +='4'">
+                <input class="btn" type="button" value="5" onclick="calc.num.value +='5'">
+                <input class="btn" type="button" value="6" onclick="calc.num.value +='6'">
+                <input class="btn" type="button" value="-" onclick="calc.num.value +='-'">
+                <input class="btn" type="button" value="7" onclick="calc.num.value +='7'">
+                <input class="btn" type="button" value="8" onclick="calc.num.value +='8'">
+                <input class="btn" type="button" value="9" onclick="calc.num.value +='9'">
+                <input class="btn" type="button" value="*" onclick="calc.num.value +='*'">
+                <input class="btn" type="button" value="/" onclick="calc.num.value +='/'">
+                <input class="btn" type="button" value="0" onclick="calc.num.value +='0'">
+                <input class="btn" type="button" value="." onclick="calc.num.value +='.'">
+                <input class="btn" type="button" value="=" onclick="calc.num.value = eval(calc.num.value) ">
+            </div>
+            <div>
+                <input type="button" id="clearButton" value="Clear All" onclick="calc.num.value = ' ' ">
+            </div>
+    </form>
+    </div>
+</body>
+</html>
